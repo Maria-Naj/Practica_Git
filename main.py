@@ -20,3 +20,10 @@ def consultar_estudiantes():
     print("ESTUDIANTES REGISTRADOS")
     for estudiante in estudiantes:
         print(estudiante)
+
+def calcular_promedio(calificaciones):
+    promedio = sum(calificaciones) / len(calificaciones)
+    print("Promedio:", promedio)
+    return promedio
+
+calcular_promedio([80, 90, 100])
